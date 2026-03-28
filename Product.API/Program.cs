@@ -13,8 +13,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// ✅ Product API also validates JWT in case it's called directly
-// ✅ Same key and issuer as Gateway
+//Product API also validates JWT in case it's called directly
+//Same key and issuer as Gateway
 var key = new SymmetricSecurityKey(
     Encoding.ASCII.GetBytes("super_secret_key_12345_very_secure_2026"));
 
