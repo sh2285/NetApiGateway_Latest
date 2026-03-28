@@ -41,7 +41,7 @@ app.MapPost("/login", ([FromBody] UserLogin user) =>
     var token = tokenHandler.CreateToken(tokenDescriptor);
     var tokenString = tokenHandler.WriteToken(token);
 
-    //Console.WriteLine("✅ Token generated: " + tokenString);
+    //Console.WriteLine("Token generated: " + tokenString);
 
     return Results.Ok(new { token = tokenString });
 });
